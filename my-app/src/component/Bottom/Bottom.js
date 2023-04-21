@@ -8,7 +8,9 @@ function Bottom(props) {
   }
   return (
     <div className="bottom-container">
-      <h3>{props.name}</h3>
+      <h3>
+        {props.name} | Price £{props.price}
+      </h3>
       <a href={props.website}>
         <img src={props.url} alt="bottom" />
       </a>

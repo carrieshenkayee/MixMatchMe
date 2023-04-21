@@ -8,7 +8,9 @@ function Shoes(props) {
   }
   return (
     <div className="shoes-container">
-      <h3>{props.name}</h3>
+      <h3>
+        {props.name} | Price £{props.price}
+      </h3>
       <a href={props.website}>
         <img src={props.url} alt="shoes" />
       </a>

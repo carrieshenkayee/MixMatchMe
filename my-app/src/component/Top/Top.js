@@ -9,7 +9,9 @@ function Top(props) {
 
   return (
     <div className="top-container">
-      <h3>{props.name}</h3>
+      <h3>
+        {props.name} | Price £{props.price}
+      </h3>
       <img src={props.url} alt="top" />
       <buttoncontainer>
         <button className="top-button" onClick={props.onClick}>

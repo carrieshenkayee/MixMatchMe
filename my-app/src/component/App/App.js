@@ -142,6 +142,7 @@ function App() {
           onClick={handleClickTop}
           website={top.url}
           name={top.name}
+          price={top.price.current.value}
         />
         <Bottom
           url={`https://${bottom.imageUrl}`}
@@ -149,6 +150,7 @@ function App() {
           onClick={handleClickBottom}
           website={bottom.url}
           name={bottom.name}
+          price={bottom.price.current.value}
         />
         <Shoes
           url={`https://${shoes.imageUrl}`}
@@ -156,6 +158,7 @@ function App() {
           onClick={handleClickShoes}
           website={shoes.url}
           name={shoes.name}
+          price={shoes.price.current.value}
         />
       </div>
 
