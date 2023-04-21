@@ -35,7 +35,7 @@ function App() {
       method: "GET",
       headers: {
         "X-RapidAPI-Key":
-          "b26cfd607bmshde566492f02abf2p1c0a23jsn1608f6ffd82d",
+          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
@@ -61,7 +61,7 @@ function App() {
       method: "GET",
       headers: {
         "X-RapidAPI-Key":
-          "b26cfd607bmshde566492f02abf2p1c0a23jsn1608f6ffd82d",
+          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
@@ -87,7 +87,7 @@ function App() {
       method: "GET",
       headers: {
         "X-RapidAPI-Key":
-          "b26cfd607bmshde566492f02abf2p1c0a23jsn1608f6ffd82d",
+          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
@@ -100,6 +100,7 @@ function App() {
         options
       );
       const data = await response.json();
+      console.log(data)
       const randomIndex = Math.floor(Math.random() * data.products.length);
       setShoes(data.products[randomIndex]);
     }
@@ -122,9 +123,9 @@ function App() {
   return (
     <div>
       <h1>Random Clothing Item</h1>
-      <Top url={`https://${top.imageUrl}`} alt={top.name} onClick={handleClickTop} />
-      <Bottom url={`https://${bottom.imageUrl}`} alt={bottom.name} onClick={handleClickBottom} />
-      <Shoes url={`https://${shoes.imageUrl}`} alt={shoes.name} onClick={handleClickShoes} />
+      <Top url={`https://${top.imageUrl}`} alt={top.name} onClick={handleClickTop} website={top.url} name={top.name}/>
+      <Bottom url={`https://${bottom.imageUrl}`} alt={bottom.name} onClick={handleClickBottom} website={bottom.url}/>
+      <Shoes url={`https://${shoes.imageUrl}`} alt={shoes.name} onClick={handleClickShoes} website={shoes.url}/>
       {/* {product ? (
         <div>
           {product.imageUrl && (
