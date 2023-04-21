@@ -23,9 +23,9 @@ import Shoes from "../Shoes/Shoes";
 import "./App.css";
 
 function App() {
-  const [top, setTop] = useState({ imageUrl: "", name: "" });
-  const [bottom, setBottom] = useState({ imageUrl: "", name: "" });
-  const [shoes, setShoes] = useState({ imageUrl: "", name: "" });
+  const [top, setTop] = useState({ imageUrl: "", name: "", price: {current:{value:0}} });
+  const [bottom, setBottom] = useState({ imageUrl: "", name: "", price: {current:{value:0}}});
+  const [shoes, setShoes] = useState({ imageUrl: "", name: "", price: {current:{value:0}} });
   const [topReload, setTopReload] = useState(false);
   const [bottomReload, setBottomReload] = useState(false);
   const [shoesReload, setShoesReload] = useState(false);
