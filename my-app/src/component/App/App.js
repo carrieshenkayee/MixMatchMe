@@ -35,7 +35,7 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "09936077c8msh07545fa1753d725p199eb5jsn572c671425ea",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
@@ -60,7 +60,7 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "09936077c8msh07545fa1753d725p199eb5jsn572c671425ea",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
@@ -85,7 +85,7 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "09936077c8msh07545fa1753d725p199eb5jsn572c671425ea",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
