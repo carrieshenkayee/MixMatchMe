@@ -4,8 +4,8 @@ function Shoes(props) {
 
     return (
       <div className="top-container">
-      <img src={}/>
-      <button className="top-button" onClick={}></button>
+      <img src={props.url} alt="shoes"/>
+      <button className="top-button" onClick={props.onClick}>Change</button>
       </div>
     );
   }
