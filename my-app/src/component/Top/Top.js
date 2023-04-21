@@ -1,5 +1,8 @@
 import React from "react";
 
+import './Top.css';
+
+
 function Top(props) {
 
   function handleClick() {
@@ -11,6 +14,7 @@ function Top(props) {
       <img src={props.url} alt="top"/>
       <button className="top-button" onClick={props.onClick}>Change</button>
       <button onClick={handleClick}>website</button>
+
       </div>
     );
   }
