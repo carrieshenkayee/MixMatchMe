@@ -12,9 +12,10 @@ function Shoes(props) {
 
       <div className="shoes-container">
       <a href={props.website}><img src={props.url} alt="shoes"/></a>
+      <buttoncontainer>
       <button className="top-button" onClick={props.onClick}>Change</button>
       <button onClick={handleClick}>website</button>
-
+</buttoncontainer>
       </div>
     );
   }

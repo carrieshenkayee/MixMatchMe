@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
+.top-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the items horizontally */
+  margin-top: 9vh; 
+  justify-content: center; /* Centers the items vertically */
+ 
+}
+
+
 :root {
   --black: black;
   --grey: #333;
@@ -10,6 +21,7 @@
 }
 
 button {
+  margin-top: 10px;
   background-color: black;
   color: white;
   padding: 10px 20px;
@@ -23,4 +35,10 @@ button {
 
 .button:hover {
   background-color: lightblue;
+}
+
+buttoncontainer{
+  display: flex; 
+
+
 }

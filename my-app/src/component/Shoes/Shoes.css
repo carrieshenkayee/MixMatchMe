@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
+
+.shoes-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the items horizontally */
+  margin-top: 20px; 
+  justify-content: center; /* Centers the items vertically */
+ 
+}
+
 :root {
   --black: black;
   --grey: #333;

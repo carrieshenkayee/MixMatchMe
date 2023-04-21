@@ -12,9 +12,10 @@ function Bottom(props) {
 
       <div className="bottom-container">
       <a href={props.website}><img src={props.url} alt="bottom"/></a>
+      <buttoncontainer>
       <button className="top-button" onClick={props.onClick}>Change</button>
       <button onClick={handleClick}>website</button>
-
+</buttoncontainer>
       </div>
     );
   }

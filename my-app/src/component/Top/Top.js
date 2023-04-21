@@ -12,9 +12,10 @@ function Top(props) {
     return (
       <div className="top-container">
       <img src={props.url} alt="top"/>
+      <buttoncontainer>
       <button className="top-button" onClick={props.onClick}>Change</button>
       <button onClick={handleClick}>website</button>
-
+</buttoncontainer>
       </div>
     );
   }
