@@ -17,15 +17,15 @@ Goal: Mix and Match App for clothing
 */
 
 import React, { useEffect, useState } from "react";
-import Top from '../Top/Top';
-import Bottom from '../Bottom/Bottom';
-import Shoes from '../Shoes/Shoes';
-import './App.css';
+import Top from "../Top/Top";
+import Bottom from "../Bottom/Bottom";
+import Shoes from "../Shoes/Shoes";
+import "./App.css";
 
 function App() {
-  const [top, setTop] = useState({ imageUrl: '', name: '' });
-  const [bottom, setBottom] = useState({ imageUrl: '', name: '' });
-  const [shoes, setShoes] = useState({ imageUrl: '', name: '' });
+  const [top, setTop] = useState({ imageUrl: "", name: "" });
+  const [bottom, setBottom] = useState({ imageUrl: "", name: "" });
+  const [shoes, setShoes] = useState({ imageUrl: "", name: "" });
   const [topReload, setTopReload] = useState(false);
   const [bottomReload, setBottomReload] = useState(false);
   const [shoesReload, setShoesReload] = useState(false);
@@ -35,15 +35,14 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key":
-          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
 
     // fetch top data
     async function fetchTopData() {
-      const item = 't-shirt';
+      const item = "t-shirt";
       const response = await fetch(
         `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=50&country=US&currency=USD&sort=freshness&sizeSchema=US&lang=en-US&q=${item}`,
         options
@@ -61,15 +60,14 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key":
-          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
 
     // fetch bottom data
     async function fetchBottomData() {
-      const item = 'trousers';
+      const item = "trousers";
       const response = await fetch(
         `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=50&country=US&currency=USD&sort=freshness&sizeSchema=US&lang=en-US&q=${item}`,
         options
@@ -87,21 +85,20 @@ function App() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key":
-          "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
+        "X-RapidAPI-Key": "62c067fc51msh43e574ae366a848p182de9jsn496ba862e5d1",
         "X-RapidAPI-Host": "asos2.p.rapidapi.com",
       },
     };
 
     // fetch shoes data
     async function fetchShoesData() {
-      const item = 'shoes';
+      const item = "shoes";
       const response = await fetch(
         `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=50&country=US&currency=USD&sort=freshness&sizeSchema=US&lang=en-US&q=${item}`,
         options
       );
       const data = await response.json();
-      console.log(data)
+      console.log(data);
       const randomIndex = Math.floor(Math.random() * data.products.length);
       setShoes(data.products[randomIndex]);
     }
@@ -125,17 +122,44 @@ function App() {
     <div>
       <nav>
         <ul>
-          <li><a href="#">Brand 1</a></li>
-          <li><a href="#">Brand 2</a></li>
-          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Brand 1</a>
+          </li>
+          <li>
+            <a href="#">Brand 2</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
         </ul>
       </nav>
-      
+
       <h1>Mix Match Me</h1>
       <div className="container">
-  <Top url={`https://${top.imageUrl}`} alt={top.name} onClick={handleClickTop} website={top.url} name={top.name}/>
-      <Bottom url={`https://${bottom.imageUrl}`} alt={bottom.name} onClick={handleClickBottom} website={bottom.url}/>
-      <Shoes url={`https://${shoes.imageUrl}`} alt={shoes.name} onClick={handleClickShoes} website={shoes.url}/>
+        <Top
+          url={`https://${top.imageUrl}`}
+          alt={top.name}
+          onClick={handleClickTop}
+          website={top.url}
+          name={top.name}
+          price={top.price.current.value}
+        />
+        <Bottom
+          url={`https://${bottom.imageUrl}`}
+          alt={bottom.name}
+          onClick={handleClickBottom}
+          website={bottom.url}
+          name={bottom.name}
+          price={bottom.price.current.value}
+        />
+        <Shoes
+          url={`https://${shoes.imageUrl}`}
+          alt={shoes.name}
+          onClick={handleClickShoes}
+          website={shoes.url}
+          name={shoes.name}
+          price={shoes.price.current.value}
+        />
       </div>
 
       {/* {product ? (
