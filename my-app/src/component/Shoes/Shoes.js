@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import './Shoes.css';
 
 function Shoes(props) {
 
     return (
-      <div className="top-container">
+      <div className="shoes-container">
       <img src={props.url} alt="shoes"/>
-      <button className="top-button" onClick={props.onClick}>Change</button>
+      <button className="button" onClick={props.onClick}>Next</button>
       </div>
     );
   }

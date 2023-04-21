@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import './Top.css';
 
 function Top(props) {
 
     return (
       <div className="top-container">
       <img src={props.url} alt="top"/>
-      <button className="top-button" onClick={props.onClick}>Change</button>
+      <button className="button" onClick={props.onClick}>Next</button>
       </div>
     );
   }
