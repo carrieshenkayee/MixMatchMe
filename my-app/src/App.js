@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   const [product, setProduct] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,11 +23,7 @@ function App() {
         const data = await response.json();
         const randomIndex = Math.floor(Math.random() * data.products.length);
         setProduct(data.products[randomIndex]);
-        if (product && product.additionalImageUrls) {
-          console.log(product.additionalImageUrls[0]);
-        }
-
-        console.log(data.products[randomIndex]);
+        
       } catch (err) {
         console.error(err);
       }
@@ -35,16 +32,23 @@ function App() {
     fetchData();
   }, []);
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+console.log(product)
   return (
     <div>
       <h1>Random Clothing Item</h1>
       {product ? (
         <div>
-          <img
-            src={product.additionalImageUrls}
-            alt={product.name}
-            style={{ width: "300px" }}
-          />
+          {product.imageUrl && (
+            <img
+              src={`https://${product.imageUrl}`}
+              alt={product.name}
+              style={{ width: "300px", display: imageLoaded ? "block" : "none" }}
+              onLoad={handleImageLoad}
+            />
+          )}
           <h2>{product.name}</h2>
           <p>Price: ${product.price.current.value}</p>
           <a
