@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+:root {
+    --black: black;
+    --grey: #333;
+    --white: white;
+    --font1: 'Tilt Prism', sans-serif;
+    --font2: 'Chivo Mono', monospace;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    font-family: var(--font2);
+    margin-left: 10px;
+  }
+  
+  .button:hover {
+    background-color: lightblue;
+  }
+
+  

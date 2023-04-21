@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import './Bottom.css';
 
 function Bottom(props) {
 
     return (
-      <div className="top-container">
+      <div className="bottom-container">
       <img src={props.url} alt="bottom"/>
-      <button className="top-button" onClick={props.onClick}>Change</button>
+      <button className="button" onClick={props.onClick}>Next</button>
       </div>
     );
   }
