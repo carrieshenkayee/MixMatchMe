@@ -1,7 +1,7 @@
-# Advanced React Project Week
+# Advanced React Hackathon
 
-## MixMatchMe
-##-- an app to discover your new fashion styles
+## MixMatchMe:
+##an app to discover your new fashion styles
 
 🔎👗👘🧥👖👔🧣👚👠🥾
 
