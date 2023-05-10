@@ -1,23 +1,30 @@
-# React-athon
+# Advanced React Project Week
 
-## Task 1 - API Research (20 - 30 mins)
+## MixMatchMe
+##-- an app to discover your new fashion styles
 
-Choose at least one external API to fetch data from that you'll then use in your React app. This [list](https://apilist.fun) may help. Remember to read the API's documentation and send test requests from Postman to view the data you get back first before deciding it's suitable to use. You can always use the API list we used in the hackathon earlier in the course as well.
+🔎👗👘🧥👖👔🧣👚👠🥾
 
-## Task 2 - Ideate and Plan (30 - 60 mins)
+📌 User Story:
 
-- Once you choose an API and test it out, use Disney ideation to come up with an idea of what you want to build - what problem are you solving? Who are your users, and what do they need? Set a timer for each room (dreamer, realist, and critic).
-- Boil down what your MVP is and what then becomes stretch goals. Break down your idea into its component parts and prioritise your tasks. Use project management software like [Trello](https://trello.com/en) to organize your plan, breaking it down into tasks that you can then treat as tickets for each feature. Base each of these around a [user story](https://www.atlassian.com/agile/project-management/user-stories).
-- Create a component tree with state and behaviour for each component and at least low-fidelity wireframes for your design.
+As a shopper, I want to effortlessly find inspiration for my next outfit and visualize how different clothing items look when combined, so that I won't need to spend hours searching through countless pages and feeling lost.
 
-## Task 3 - Build your MVP
+📌 Problems Addressed:
 
-Build the simplest version of your app (just enough features to be useable). Make regular commits as you build, and practice branching off for each component and merging that branch in. Use the React hooks and tools we've looked at over the past weeks where appropriate.
+Difficulty finding reliable places to buy new clothes.
+Lack of knowledge about reputable fashion brands.
+Inability to visualize how clothing items look when put together.
 
-## Stretch Goals
+📌 How it Works:
 
-Once your MVP is functioning and if you have time left, focus on what features you are going to build next - iterate through your planned stretch goals one by one. Again, make use of feature branching and atomic commits (committing often after each change).
+Introducing MixMatchMe, the ultimate fashion inspiration app that transforms your shopping experience. Say goodbye to uncertainty and hello to effortless style. With just a tap, MixMatchMe fetches random clothing items from ASOS, providing a glimpse into the endless possibilities of your next outfit. Visualize the perfect ensemble, explore further, and make confident purchases directly from the ASOS website.
 
-## Retro
+📌 Unique Features:
 
-You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea. This is a good time to practice an [agile retrospective](https://www.atlassian.com/team-playbook/plays/retrospective) - leave time before presentations to discuss what you did well today, what you learned, what you might do differently next time, and actions you can take forward into your project next week.
+MixMatchMe sets itself apart with its ability to bring users fresh ideas they may have never considered before, all while visualizing clothing combinations. Finally, users can see how different pieces come together before making a purchase, empowering them to make informed decisions and unleash their creativity.
+
+📌 Future Expansion and Vision:
+
+But this is just the beginning. In the future, MixMatchMe will hopefully target various independent brands, offering inspiration across a wide range of styles, including vintage, casual, punk, street, chic, and more. Whether you're looking for London style, Korean fashion, Japanese trends, Chinese influences, or French elegance, MixMatchMe will become your go-to source for fashion creativity.
+
+Discover the potential of MixMatchMe today and unlock a world of style possibilities with ease and confidence.
