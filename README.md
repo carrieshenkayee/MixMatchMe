@@ -9,7 +9,7 @@ Introducing MixMatchMe, the ultimate fashion inspiration app that transforms you
 🔎👗👘🧥👖👔🧣👚👠🥾
 
 ## 📌 User Story:
-As a shopper, I want to effortlessly find inspiration for my next outfit and visualize how different clothing items look when combined, so that I won't need to spend hours searching through countless pages and feeling lost.
+"As a shopper, I want to effortlessly find inspiration for my next outfit and visualize how different clothing items look when combined, so that I won't need to spend hours searching through countless pages and feeling lost."
 
 ## 📌 Problems:
 Difficulty finding reliable places to buy new clothes.
