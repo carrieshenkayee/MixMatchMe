@@ -22,4 +22,8 @@ MixMatchMe sets itself apart with its ability to bring users fresh ideas they ma
 ## 📌 Future Expansion and Vision:
 But this is just the beginning. In the future, MixMatchMe will hopefully target various independent brands, offering inspiration across a wide range of styles, including vintage, casual, punk, street, chic, and more. Whether you're looking for London style, Korean fashion, Japanese trends, Chinese influences, or French elegance, MixMatchMe will become your go-to source for fashion creativity.
 
-
+## 👁 How To See This Yourself:
+1. cd my-app
+2. npm i
+3. npm start
+4. go to localhost
