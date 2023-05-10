@@ -4,6 +4,8 @@ Bootcamp: {Week 6} at the School of Code
 ## MixMatchMe: an app to discover your new fashion styles
 Introducing MixMatchMe, the ultimate fashion inspiration app that transforms your shopping experience. Say goodbye to uncertainty and hello to effortless style. With just a tap, MixMatchMe fetches random clothing items from ASOS, providing a glimpse into the endless possibilities of your next outfit. Visualize the perfect ensemble, explore further, and make confident purchases directly from the ASOS website.
 
+![MixMAtchMe](/Users/carrieshen/Desktop/1. School of Code/Public Repo/Pin project_MixMatchMe App/MixMatchMe2.png)
+
 🔎👗👘🧥👖👔🧣👚👠🥾
 
 ## 📌 User Story:
